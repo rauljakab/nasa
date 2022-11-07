@@ -3,7 +3,7 @@ defmodule Nasa.MixProject do
 
   def project do
     [
-      app: :nasa_fuel_problem,
+      app: :nasa,
       version: "0.1.0",
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
