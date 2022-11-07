@@ -1,9 +1,9 @@
 defmodule Nasa do
-  def compute_flight_fuel(mass, array) do
+  def compute_flight_fuel(ship_mass, array) do
     array
     |> Enum.reverse()
     |> Enum.reduce(0, fn flight, acc ->
-      acc + operate(mass + acc, flight)
+      acc + operate(ship_mass + acc, flight)
     end)
   end
 
